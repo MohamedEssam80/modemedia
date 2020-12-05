@@ -12,7 +12,7 @@
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Modemedia</title>
 </head>
 
 <body>
@@ -108,10 +108,10 @@
                     <img src="images/serivce1.png" class="img-fluid">
                 </div>
                 <div class="col-lg-4 first feat-img">
-                    <img id="change-image1" src="images/1fb.jpg">
+                    <img id="change-image1" src="images/1fb.jpg" class="img-fluid">
                 </div>
                 <div class="col-lg-4 second feat-img">
-                    <img id="change-image2" src="images/2fb.jpg">
+                    <img id="change-image2" src="images/2fb.jpg" class="img-fluid">
                 </div>
             </div>
 
@@ -123,10 +123,10 @@
                     <img src="images/service2.png" class="img-fluid">
                 </div>
                 <div class="col-lg-4 third feat-img">
-                    <img id="change-image3" src="images/3fb.jpg">
+                    <img id="change-image3" src="images/3fb.jpg" class="img-fluid">
                 </div>
                 <div class="col-lg-4 fourth feat-img">
-                    <img id="change-image4" src="images/4fb.jpg">
+                    <img id="change-image4" src="images/4fb.jpg" class="img-fluid">
                 </div>
             </div>
 
@@ -138,10 +138,10 @@
                     <img src="images/service3.png" class="img-fluid">
                 </div>
                 <div class="col-lg-4 fifth feat-img">
-                    <img id="change-image5" src="images/5fb.jpg">
+                    <img id="change-image5" src="images/5fb.jpg" class="img-fluid">
                 </div>
                 <div class="col-lg-4 sixth feat-img">
-                    <img id="change-image6" src="images/6fb.jpg">
+                    <img id="change-image6" src="images/6fb.jpg" class="img-fluid">
                 </div>
             </div>
 
@@ -153,10 +153,10 @@
                     <img src="images/service44.png" class="img-fluid">
                 </div>
                 <div class="col-lg-4 seventh feat-img">
-                    <img id="change-image7" src="images/7fb.jpg">
+                    <img id="change-image7" src="images/7fb.jpg" class="img-fluid">
                 </div>
                 <div class="col-lg-4 eighth feat-img">
-                    <img id="change-image8" src="images/8fb.jpg">
+                    <img id="change-image8" src="images/8fb.jpg" class="img-fluid">
                 </div>
             </div>
 
@@ -264,6 +264,9 @@
     <!-- Why us section End -->
 
     <hr>
+    <!-- Last projects Section
+   ================================================== -->
+
     <section id="last-projects">
 
         <h5 style="border-bottom: 5px solid rgb(54, 54, 54) ;display: inline;">
@@ -274,16 +277,20 @@
         <br>
         <!-- ,,,,,,,,,,,, -->
         <div class="button-container">
-            <button class="project-btn">project</button>
-            <button class="project-btn">project</button>
-            <button class="project-btn">project</button>
-            <button class="project-btn">project</button>
+            <button class="marmar bton">project</button>
+            <button class="modemedia bton">project</button>
+            <button class="modecollection bton">project</button>
+            <button class="almayas bton">project</button>
         </div>
         <br>
         <br>
         <br>
 
-        <img id="change-image" src="images/modelogo.png" alt="Black Image" />
+        <img id="change-image" src="images/modecollection.jpeg" alt="Black Image" class="img-fluid" />
+
+        <!-- <h1 id="change-image">
+            Click here to our featured project
+        </h1> -->
 
     </section>
     <!-- Last projects section End -->
@@ -433,27 +440,27 @@
 
         jQuery(document).ready(function($) {
 
-            $('.project-btn').on({
+            $('.marmar').on({
                 'click': function() {
-                    $('#change-image').attr("src", "images/5b.jpg");
+                    $('#change-image').attr("src", "images/marmar.jpeg");
                 }
             });
 
-            $('.project-btn').on({
+            $('.modemedia').on({
                 'click': function() {
-                    $('#change-image').attr("src", "images/6b.jpg");
+                    $('#change-image').attr("src", "images/modemedia.jpeg");
                 }
             });
 
-            $('.project-btn').on({
+            $('.modecollection').on({
                 'click': function() {
-                    $('#change-image').attr("src", "images/7b.jpg");
+                    $('#change-image').attr("src", "images/modecollection.jpeg");
                 }
             });
 
-            $('.project-btn').on({
+            $('.almayas').on({
                 'click': function() {
-                    $('#change-image').attr("src", "images/8-b.jpg");
+                    $('#change-image').attr("src", "images/almayas.jpg");
                 }
             });
         });

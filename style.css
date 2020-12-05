@@ -183,16 +183,20 @@
         padding: 50px;
     }
     
-    .project-btn {
+    .bton {
         background-color: black;
         color: white;
         border-radius: 5px 5px 5px 5px;
-        width: 20%;
+        border: 1px solid transparent;
+        width: 10%;
+        justify-content: center;
+        overflow: hidden;
     }
     
-    .project-btn:hover {
+    .bton:hover {
         background-color: white;
         color: black;
+        border: 1px solid black;
     }
     
     .st {
