@@ -23,7 +23,7 @@
    ================================================== -->
     <header id="home">
 
-        <div class="container head">
+        <!-- <div class="container head">
             <ul class="nav justify-content-center align-items-center navbar-fixed-top">
                 <li class="nav-item">
                     <a class="nav-link ui" href="#home">Home</a>
@@ -46,7 +46,23 @@
                     <a class="nav-link ui" href="#footer">ContactUs</a>
                 </li>
             </ul>
-        </div>
+        </div> -->
+        <nav class="navbar navbar-expand-lg navbar-light text" style="    backdrop-filter: brightness(60%);">
+                        <img src="images/medialogo.png" alt="logo" style="width:140px;">
+                        <!-- <a class="navbar-brand text-light" href="#">Navbar</a> -->
+            <button class="navbar-toggler" style="border-color: #fff;" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars text-light"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav header-nav">
+                <a class="nav-item nav-link text-light active" href="#home">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link text-light" href="#our-services">Services</a>
+                <a class="nav-item nav-link text-light" href="#about-us">About</a>
+                <a class="nav-item nav-link text-light" href="#" onclick="location.href='regisration.html';">Registration</a>
+                <a class="nav-item nav-link text-light" href="#footer">ContactUs</a>
+              </div>
+            </div>
+          </nav>
         <div class="fluid app">
             <div class="container mode">
                 <img src="images/2.png" class="img-fluid">
@@ -108,10 +124,10 @@
                     <img src="images/serivce1.png" class="img-fluid">
                 </div>
                 <div class="col-lg-4 first feat-img mt-2 mt-lg-0">
-                    <img id="change-image1" src="images/1fb.jpg" class="img-fluid">
+                    <img id="change-image1" onclick="route('socail media managment')" src="images/1fb.jpg" class="img-fluid">
                 </div>
                 <div class="col-lg-4 second feat-img mt-2 mt-lg-0">
-                    <img id="change-image2" src="images/2fb.jpg" class="img-fluid">
+                    <img id="change-image2" onclick="route('instgram posts')" src="images/2fb.jpg" class="img-fluid">
                 </div>
             </div>
 
@@ -123,7 +139,7 @@
                     <img src="images/service2.png" class="img-fluid">
                 </div>
                 <div class="col-lg-4 third feat-img mt-2 mt-lg-0">
-                    <img id="change-image3" src="images/3fb.jpg" class="img-fluid">
+                    <img id="change-image3" onclick="route('web design and mobile app')"  src="images/3fb.jpg" class="img-fluid">
                 </div>
                 <div class="col-lg-4 fourth feat-img mt-2 mt-lg-0">
                     <img id="change-image4" src="images/4fb.jpg" class="img-fluid">
@@ -508,6 +524,10 @@
         function topFunction() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
+        }
+
+        function route(route){
+            location.href='regisration.html?serive=' + route;;
         }
     </script>
 </body>
