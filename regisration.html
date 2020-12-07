@@ -28,9 +28,8 @@
             href="#home"
             onclick="location.href='index.html';"
             ><i class="far fa-arrow-alt-circle-left"></i>
-
-            Return Home</a
-          >
+              Return Home
+            </a>
         </li>
 
         <li class="nav-item">
@@ -49,7 +48,7 @@
     <div class="container form mt-100">
       <h3 style="color: white">Registration</h3>
 
-      <form action="/sendemail.php">
+      <form action="http://localhost/modemedia/sendEmail.php" method="POST">
         <div class="row d-flex justify-content-center">
           <div class="col-md-6">
             <div class="form-groupx">
@@ -59,6 +58,8 @@
                 class="form-control"
                 placeholder="Comapny Name"
                 id="name"
+                name="company"
+                required
               />
             </div>
             <div class="form-group">
@@ -67,14 +68,18 @@
                 class="form-control"
                 placeholder="The Service You Want"
                 id="service"
+                name="service"
+                required
               />
             </div>
             <div class="form-group">
               <input
                 type="text"
                 class="form-control"
-                placeholder="Client Number"
+                placeholder="Client Name"
                 id="number"
+                name="client_name"
+                required
               />
             </div>
             <div class="form-group">
@@ -83,6 +88,8 @@
                 class="form-control"
                 placeholder="Mobile Number"
                 id="cell-no"
+                name="mobile_number"
+                required
               />
             </div>
             <div class="form-group">
@@ -91,6 +98,8 @@
                 class="form-control"
                 placeholder="Email"
                 id="email"
+                name="email"
+                required
               />
             </div>
           </div>
