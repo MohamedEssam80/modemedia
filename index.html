@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Modemedia</title>
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 </head>
 
 <body>
@@ -93,7 +94,7 @@
         </div>
         <br>
         <div class="d-flex justify-content-center service-cont">
-            <div class="row">
+            <div class="row justify-content-around">
                 <div class="col-md-3 services">
                     <img class="img-fluid rounded srv1-img" src="images/Group 109@2x.png">
                 </div>
@@ -117,7 +118,7 @@
 
     <section id="our-services">
         <br>
-        <h3 class="text-center" style="border-bottom: 5px solid rgb(54, 54, 54) ;display: inline;">
+        <h3 class="text-center" style="border-bottom: 3px solid rgb(54, 54, 54);padding: 5px 11px;display: inline;">
             Our Featured Services
         </h3>
         <br>
@@ -129,11 +130,11 @@
                     <img src="images/serivce1.png" class="img-fluid">
                 </div>
                 <div class="col-lg-4 first feat-img mt-2 mt-lg-0">
-                    <img id="change-image1" onclick="route('socail media managment')" src="images/1fb.jpg"
+                    <img id="change-image1" onclick="route(event,'socail media managment')" src="images/1fb.jpg"
                         class="img-fluid">
                 </div>
                 <div class="col-lg-4 second feat-img mt-2 mt-lg-0">
-                    <img id="change-image2" onclick="route('instgram posts')" src="images/2fb.jpg" class="img-fluid">
+                    <img id="change-image2" onclick="route(event,'instgram posts')" src="images/2fb.jpg" class="img-fluid">
                 </div>
             </div>
 
@@ -145,11 +146,11 @@
                     <img src="images/service2.png" class="img-fluid">
                 </div>
                 <div class="col-lg-4 third feat-img mt-2 mt-lg-0">
-                    <img id="change-image3" onclick="route('web design and mobile app')" src="images/3fb.jpg"
+                    <img id="change-image3" onclick="route(event,'web design and mobile app')" src="images/3fb.jpg"
                         class="img-fluid">
                 </div>
                 <div class="col-lg-4 fourth feat-img mt-2 mt-lg-0">
-                    <img id="change-image4" src="images/4fb.jpg" class="img-fluid">
+                    <img id="change-image4" onclick="route(event,'sponserd ADS')" src="images/4fb.jpg" class="img-fluid">
                 </div>
             </div>
 
@@ -158,13 +159,13 @@
 
             <div class="row">
                 <div class="col-lg-3">
-                    <img src="images/service3.png" class="img-fluid">
+                    <img src="images/service3.png"  class="img-fluid">
                 </div>
                 <div class="col-lg-4 fifth feat-img mt-2 mt-lg-0">
-                    <img id="change-image5" src="images/5fb.jpg" class="img-fluid">
+                    <img id="change-image5" onclick="route(event,'search engine')" src="images/5fb.jpg" class="img-fluid">
                 </div>
                 <div class="col-lg-4 sixth feat-img mt-2 mt-lg-0">
-                    <img id="change-image6" src="images/6fb.jpg" class="img-fluid">
+                    <img id="change-image6" onclick="route(event,'video')" src="images/6fb.jpg" class="img-fluid">
                 </div>
             </div>
 
@@ -176,10 +177,10 @@
                     <img src="images/service44.png" class="img-fluid">
                 </div>
                 <div class="col-lg-4 seventh feat-img mt-2 mt-lg-0">
-                    <img id="change-image7" src="images/7fb.jpg" class="img-fluid">
+                    <img id="change-image7" onclick="route(event,'paid ADS')" src="images/7fb.jpg" class="img-fluid">
                 </div>
                 <div class="col-lg-4 eighth feat-img mt-2 mt-lg-0">
-                    <img id="change-image8" src="images/8fb.jpg" class="img-fluid">
+                    <img id="change-image8" onclick="route(event,'')" src="images/8fb.jpg" class="img-fluid">
                 </div>
             </div>
 
@@ -195,7 +196,7 @@
 
     <section id="about-us">
 
-        <h3 class="text-center" style="border-bottom: 5px solid rgb(54, 54, 54) ;display: inline;">
+        <h3 class="text-center" style="border-bottom: 3px solid rgb(54, 54, 54);padding: 5px 11px; ;display: inline;">
             About us
         </h3>
 
@@ -253,7 +254,7 @@
 
     <section id="why-us">
 
-        <h5 style="border-bottom: 5px solid rgb(54, 54, 54) ;display: inline;">
+        <h5 style="border-bottom: 3px solid rgb(54, 54, 54);padding: 5px 11px;display: inline;">
             Why work with us?
         </h5>
         <div class="container why">
@@ -298,7 +299,7 @@
 
     <section id="last-projects">
 
-        <h5 style="border-bottom: 5px solid rgb(54, 54, 54) ;display: inline;">
+        <h5 style="border-bottom: 3px solid rgb(54, 54, 54);padding: 5px 11px;display: inline;">
             Last projects
         </h5>
         <div id="carouselExampleControls" class="carousel slide mt-3" data-ride="carousel">
@@ -378,13 +379,13 @@
                     <!-- Links -->
                     <h5 class="text-uppercase">Contact Info</h5>
 
-                    <ul class="list-unstyled">
+                    <ul class="list-unstyled" style="    letter-spacing: 2px">
                         <br>
                         <li>
                             <p><strong>Phone: </strong> +9(509)1206705</p>
                         </li>
                         <li>
-                            <p><strong>Adress: </strong> Kuwait</p>
+                            <p><strong>Address: </strong> Kuwait</p>
                         </li>
                     </ul>
 
@@ -421,8 +422,9 @@
             <a href="https://modecollection.store/" target="blank"> modecollection.store</a>
         </div>
         <!-- Copyright -->
-
+        
     </footer>
+    <div style="position: fixed;" class="elfsight-app-0e137afc-dfed-4df3-81f7-dbdecb9d3cb6"></div>
     <!-- Footer -->
 
     <script>
@@ -430,50 +432,82 @@
 
         $('.first').on({
             'click': function () {
-                $('#change-image1').attr("src", "images/1b.jpg");
+                var image = $("#change-image1");
+    image.fadeOut('fast', function () {
+        image.attr("src", "images/1b.jpg").attr('d-image-number','2');
+        image.fadeIn('fast');
+    });
             }
         });
 
 
         $('.second').on({
             'click': function () {
-                $('#change-image2').attr("src", "images/2b.jpg");
+                var image = $("#change-image2");
+    image.fadeOut('fast', function () {
+        image.attr("src", "images/2b.jpg").attr('d-image-number','2');
+        image.fadeIn('fast');
+    });
             }
         });
 
         $('.third').on({
             'click': function () {
-                $('#change-image3').attr("src", "images/3b.jpg");
+                var image = $("#change-image3");
+    image.fadeOut('fast', function () {
+        image.attr("src", "images/3b.jpg").attr('d-image-number','2');
+        image.fadeIn('fast');
+    });
             }
         });
 
         $('.fourth').on({
             'click': function () {
-                $('#change-image4').attr("src", "images/4b.jpg");
+                var image = $("#change-image4");
+    image.fadeOut('fast', function () {
+        image.attr("src", "images/4b.jpg").attr('d-image-number','2');
+        image.fadeIn('fast');
+    });
             }
         });
 
         $('.fifth').on({
             'click': function () {
-                $('#change-image5').attr("src", "images/5b.jpg");
+                var image = $("#change-image5");
+    image.fadeOut('fast', function () {
+        image.attr("src", "images/5b.jpg").attr('d-image-number','2');
+        image.fadeIn('fast');
+    });
             }
         });
 
         $('.sixth').on({
             'click': function () {
-                $('#change-image6').attr("src", "images/6b.jpg");
+                var image = $("#change-image6");
+    image.fadeOut('fast', function () {
+        image.attr("src", "images/6b.jpg").attr('d-image-number','2');
+        image.fadeIn('fast');
+    });
             }
         });
 
         $('.seventh').on({
             'click': function () {
-                $('#change-image7').attr("src", "images/7b.jpg");
+                var image = $("#change-image7");
+    image.fadeOut('fast', function () {
+        image.attr("src", "images/7b.jpg").attr('d-image-number','2');
+        image.fadeIn('fast');
+    });
             }
         });
 
         $('.eighth').on({
             'click': function () {
-                $('#change-image8').attr("src", "images/8-b.jpg");
+                var image = $("#change-image8");
+    image.fadeOut('fast', function () {
+        image.attr("src", "images/8-b.jpg").attr('d-image-number','2');
+        image.fadeIn('fast');
+    });
             }
         });
 
@@ -542,8 +576,10 @@
             document.documentElement.scrollTop = 0;
         }
 
-        function route(route) {
-            location.href = 'regisration.html?serive=' + route;;
+        function route(e,route) {
+            if(e.srcElement?.attributes['d-image-number']?.value == 2){
+            location.href = 'regisration.html?serive=' + route;
+            }
         }
     </script>
 </body>
