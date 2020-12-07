@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Montserrat:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
 .head {
     max-width: 100%;
     backdrop-filter: blur(200px);
@@ -6,8 +8,11 @@
     overflow: hidden;
     position: static;
 }
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 /* .navbar-fixed-top.scrolled {
-    background-color: black !important;
+    background-color: #555 !important;
 }
 
 .navbar-fixed-top.scrolled .nav-link {
@@ -74,7 +79,7 @@
 
 .reg:hover {
     background-color: white;
-    color: black;
+    color: #555;
 }
 
 .services {
@@ -192,7 +197,7 @@ p {
 }
 
 .bton {
-    background-color: black;
+    background-color: #555;
     color: white;
     border-radius: 5px 5px 5px 5px;
     border: 1px solid transparent;
@@ -203,12 +208,12 @@ p {
 
 .bton:hover {
     background-color: white;
-    color: black;
-    border: 1px solid black;
+    color: #555;
+    border: 1px solid #555;
 }
 
 .st {
-    background-color: black;
+    background-color: #111;
     color: white;
 }
 
@@ -311,3 +316,16 @@ html {
 footer p{
         text-align: left !important;
 }
+
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 20px 30px 10px #fff;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #666;
+    outline: 1px solid slategrey;
+  }
