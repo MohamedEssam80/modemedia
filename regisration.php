@@ -1,3 +1,8 @@
+<?php
+// Start the session
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -47,8 +52,13 @@
     <br />
     <div class="container form mt-100">
       <h3 style="color: white">Registration</h3>
-
-      <form action="http://localhost/modemedia/sendEmail.php" method="POST">
+      <?php if (isset($_SESSION['success'])) { ?>
+        <span style="color: #24f324"><?=$_SESSION['success']?></span>
+      <?php } ?>
+      <?php if (isset($_SESSION['errors']) && array_key_exists('mailError', $_SESSION['errors'])) { ?>
+        <span style="color: red"><?=$_SESSION['errors']['mailError']?></span>
+      <?php } ?>
+      <form action="/sendEmail.php" method="POST">
         <div class="row d-flex justify-content-center">
           <div class="col-md-6">
             <div class="form-groupx">
@@ -61,6 +71,9 @@
                 name="company"
                 required
               />
+              <?php if (isset($_SESSION['errors']) && array_key_exists('company', $_SESSION['errors'])) { ?>
+                <small style="color: white"><?=$_SESSION['errors']['company']?></small>
+              <?php } ?>
             </div>
             <div class="form-group">
               <input
@@ -71,6 +84,9 @@
                 name="service"
                 required
               />
+              <?php if (isset($_SESSION['errors']) && array_key_exists('service', $_SESSION['errors'])) { ?>
+                <small style="color: white"><?=$_SESSION['errors']['service']?></small>
+              <?php } ?>
             </div>
             <div class="form-group">
               <input
@@ -81,6 +97,9 @@
                 name="client_name"
                 required
               />
+              <?php if (isset($_SESSION['errors']) && array_key_exists('client_name', $_SESSION['errors'])) { ?>
+                <small style="color: white"><?=$_SESSION['errors']['client_name']?></small>
+              <?php } ?>
             </div>
             <div class="form-group">
               <input
@@ -91,6 +110,9 @@
                 name="mobile_number"
                 required
               />
+              <?php if (isset($_SESSION['errors']) && array_key_exists('mobile_number', $_SESSION['errors'])) { ?>
+                <small style="color: white"><?=$_SESSION['errors']['mobile_number']?></small>
+              <?php } ?>
             </div>
             <div class="form-group">
               <input
@@ -101,6 +123,9 @@
                 name="email"
                 required
               />
+              <?php if (isset($_SESSION['errors']) && array_key_exists('email', $_SESSION['errors'])) { ?>
+                <small style="color: white"><?=$_SESSION['errors']['email']?></small>
+              <?php } ?>
             </div>
           </div>
         </div>
@@ -187,3 +212,4 @@
     console.log(myParam);
   </script>
 </html>
+<?php session_destroy() ?>
