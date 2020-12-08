@@ -45,15 +45,16 @@ body{
     height: 370px;
     border-radius: 50px 50px 50px 50px;
     margin: auto;
-    margin-top: 100px;
-    backdrop-filter: blur(200px);
-    backdrop-filter: brightness(60%);
+    margin-top: 150px;
+    /* backdrop-filter: blur(200px); */
+    /* backdrop-filter: brightness(60%); */
+    background-color: #5559;
 }
 
 .mode {
     margin: auto;
-    position: absolute;
-    margin-top: -70px;
+    /* position: absolute; */
+    /* margin-top: -70px; */
 }
 
 .scirpt {
