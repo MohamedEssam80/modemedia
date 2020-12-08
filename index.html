@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Latest compiled and minified CSS -->
+    <script async defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Modemedia</title>
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 </head>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <body>
 
@@ -49,7 +49,7 @@
                 </li>
             </ul>
         </div> -->
-        <nav class="navbar navbar-expand-lg navbar-light text" style="    backdrop-filter: brightness(60%);">
+        <nav class="navbar navbar-expand-lg navbar-light text" style="   background-color: #1115;">
             <img src="images/medialogo.png" alt="logo" style="width:140px;">
             <!-- <a class="navbar-brand text-light" href="#">Navbar</a> -->
             <button class="navbar-toggler" style="border-color: #fff;" type="button" data-toggle="collapse"
@@ -69,9 +69,13 @@
                 </div>
             </div>
         </nav>
-        <div class="fluid app">
+        <div class="align-items-center app d-flex fluid" style="position: relative;">
             <div class="container mode">
-                <img src="images/2.png" class="img-fluid">
+                <img src="images/2.png" class="img-fluid" style="
+                margin: auto;
+                right: 0;
+                bottom: 90%;
+                left: 0;position: absolute;">
                 <div class="fluid script">
                     <div class="row">
                         <div class="col-md-5 scirpt-di">
@@ -433,9 +437,9 @@
         $('.first').on({
             'click': function () {
                 var image = $("#change-image1");
-    image.fadeOut('500', function () {
+    image.fadeOut(400, function () {
         image.attr("src", "images/1b.jpg").attr('d-image-number','2');
-        image.fadeIn('300',"linear");
+        image.fadeIn(450);
     });
             }
         });
@@ -444,9 +448,9 @@
         $('.second').on({
             'click': function () {
                 var image = $("#change-image2");
-    image.fadeOut('500', function () {
+    image.fadeOut(400, function () {
         image.attr("src", "images/2b.jpg").attr('d-image-number','2');
-        image.fadeIn('300',"linear");
+        image.fadeIn(450);
     });
             }
         });
@@ -454,9 +458,9 @@
         $('.third').on({
             'click': function () {
                 var image = $("#change-image3");
-    image.fadeOut('500', function () {
+    image.fadeOut(400, function () {
         image.attr("src", "images/3b.jpg").attr('d-image-number','2');
-        image.fadeIn('300',"linear");
+        image.fadeIn(450);
     });
             }
         });
@@ -464,9 +468,9 @@
         $('.fourth').on({
             'click': function () {
                 var image = $("#change-image4");
-    image.fadeOut('500', function () {
+    image.fadeOut(400, function () {
         image.attr("src", "images/4b.jpg").attr('d-image-number','2');
-        image.fadeIn('300',"linear");
+        image.fadeIn(450);
     });
             }
         });
@@ -474,9 +478,9 @@
         $('.fifth').on({
             'click': function () {
                 var image = $("#change-image5");
-    image.fadeOut('500', function () {
+    image.fadeOut(400, function () {
         image.attr("src", "images/5b.jpg").attr('d-image-number','2');
-        image.fadeIn('300',"linear");
+        image.fadeIn(450);
     });
             }
         });
@@ -484,9 +488,9 @@
         $('.sixth').on({
             'click': function () {
                 var image = $("#change-image6");
-    image.fadeOut('500', function () {
+    image.fadeOut(400, function () {
         image.attr("src", "images/6b.jpg").attr('d-image-number','2');
-        image.fadeIn('300',"linear");
+        image.fadeIn(450);
     });
             }
         });
@@ -494,9 +498,9 @@
         $('.seventh').on({
             'click': function () {
                 var image = $("#change-image7");
-    image.fadeOut('500', function () {
+    image.fadeOut(400, function () {
         image.attr("src", "images/7b.jpg").attr('d-image-number','2');
-        image.fadeIn('300',"linear");
+        image.fadeIn(450);
     });
             }
         });
@@ -504,9 +508,9 @@
         $('.eighth').on({
             'click': function () {
                 var image = $("#change-image8");
-    image.fadeOut('500', function () {
+    image.fadeOut(400, function () {
         image.attr("src", "images/8-b.jpg").attr('d-image-number','2');
-        image.fadeIn('300',"linear");
+        image.fadeIn(450);
     });
             }
         });
