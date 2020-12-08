@@ -55,6 +55,9 @@ session_start();
       <?php if (isset($_SESSION['success'])) { ?>
         <span style="color: #24f324"><?=$_SESSION['success']?></span>
       <?php } ?>
+      <?php if (isset($_SESSION['errors']) && array_key_exists('mailError', $_SESSION['errors'])) { ?>
+        <span style="color: red"><?=$_SESSION['errors']['mailError']?></span>
+      <?php } ?>
       <form action="/sendEmail.php" method="POST">
         <div class="row d-flex justify-content-center">
           <div class="col-md-6">

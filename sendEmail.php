@@ -40,7 +40,7 @@ if($_POST) {
 	$subject = 'Requested service';
 
 	// Set Message
-	$message = '<html><head></head><body>';
+	$message = '<html><head><title>Requested service</title></head><body>';
   	$message .= 'Company: ' . $company . '<br />';
   	$message .= 'Client Name: ' . $name . '<br />';
   	$message .= 'Client Number: ' . $mobileNumber . '<br />';
@@ -55,18 +55,19 @@ if($_POST) {
 	$headers = 'From: ' . $from . '\r\n';
 	$headers .= 'Reply-To: '. $email . '\r\n';
  	$headers .= 'MIME-Version: 1.0' . '\r\n';
-	$headers .= 'Content-Type: text/html;charset=UTF-8' . '\r\n';
+	// $headers .= 'Content-Type: text/html;charset=UTF-8' . '\r\n';
 
    	if (empty($errors)) {
 		try {
 			$mail = mail($siteOwnersEmail, $subject, $message, $headers);
 			$_SESSION['success'] = 'Thanks for contacting with us! We\'ll reply to you soon';
 		} catch (Exception $e) {
-			$_SESSION['errors']['mailError'] = 'Cannot send your email';
+			$_SESSION['errors']['mailError'] = 'Sorry! Cannot send your email, please try again';
 		}
 	} else {
 		$_SESSION['errors'] = $errors;
 	}
+
 	header('Location: ' . $_SERVER['HTTP_REFERER']);
 }
 
