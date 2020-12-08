@@ -55,7 +55,7 @@ session_start();
       <?php if (isset($_SESSION['success'])) { ?>
         <span style="color: #24f324"><?=$_SESSION['success']?></span>
       <?php } ?>
-      <form action="/modemedia/sendEmail.php" method="POST">
+      <form action="/sendEmail.php" method="POST">
         <div class="row d-flex justify-content-center">
           <div class="col-md-6">
             <div class="form-groupx">
