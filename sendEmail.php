@@ -55,6 +55,7 @@ if($_POST) {
 	$headers = "MIME-Version: 1.0\n";
     $headers .= "Content-type: text/html; charset=iso-8859-1";
 	$headers .= 'From: ' . $from . '\n';
+	$headers .= "Reply-To: " . $email . '\n';
 
    	if (empty($errors)) {
 		try {
