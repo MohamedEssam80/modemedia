@@ -37,25 +37,24 @@ if($_POST) {
 	}
 
    	// Subject
-	$subject = 'Requested service';
+	$subject = 'ModeMedia Registration Form';
 
 	// Set Message
-	$message = '<html><head><title>Requested service</title></head><body>';
-  	$message .= 'Company: ' . $company . '<br />';
-  	$message .= 'Client Name: ' . $name . '<br />';
-  	$message .= 'Client Number: ' . $mobileNumber . '<br />';
-	$message .= 'Email: ' . $email . '<br />';
-	$message .= 'Service:' . $service . '<br />';
+	$message = '<html><head><title>ModeMedia Registration Form</title></head><body>';
+  	$message .= '<b>Company:</b> ' . $company . '<br/>';
+  	$message .= '<b>Client Name:</b> ' . $name . '<br/>';
+  	$message .= '<b>Client Number:</b> ' . $mobileNumber . '<br/>';
+	$message .= '<b>Email:</b> ' . $email . '<br/>';
+	$message .= '<b>Service:</b> ' . $service . '<br/>';
 	$message .= '</body></html>';
 
 	// Set From: header
-	$from =  $name . ' <' . $email . '>';
+	$from =  $company . ' <' . $name . '>';
 
 	// Email Headers
 	$headers = "MIME-Version: 1.0\n";
-    $headers .= "Content-type: text/html; charset=iso-8859-1\n";
+    $headers .= "Content-type: text/html; charset=UTF-8\n";
 	$headers .= 'From: ' . $from . '\n';
-	$headers .= 'Reply-To: '. $email . '\n';
 
    	if (empty($errors)) {
 		try {
