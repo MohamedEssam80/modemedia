@@ -79,6 +79,7 @@ session_start();
               <input
                 type="text"
                 class="form-control"
+                value="<?= $_GET['service'] ?? '' ?>"
                 placeholder="The Service You Want"
                 id="service"
                 name="service"
