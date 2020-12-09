@@ -43,7 +43,7 @@ if($_POST) {
 	$message = '<html><head><title>ModeMedia Registration Form</title></head><body>';
   	$message .= '<b>Company:</b> ' . $company . '<br/>';
   	$message .= '<b>Client Name:</b> ' . $name . '<br/>';
-  	$message .= '<b>Client Number:</b> ' . $mobileNumber . '<br/>';
+  	$message .= '<b>Mobile Number:</b> ' . $mobileNumber . '<br/>';
 	$message .= '<b>Email:</b> ' . $email . '<br/>';
 	$message .= '<b>Service:</b> ' . $service . '<br/>';
 	$message .= '</body></html>';
@@ -53,7 +53,7 @@ if($_POST) {
 
 	// Email Headers
 	$headers = "MIME-Version: 1.0\n";
-    $headers .= "Content-type: text/html; charset=UTF-8\n";
+    $headers .= "Content-type: text/html; charset=iso-8859-1";
 	$headers .= 'From: ' . $from . '\n';
 
    	if (empty($errors)) {
