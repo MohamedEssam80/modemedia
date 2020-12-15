@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" /> -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Modemedia</title>
@@ -53,7 +53,7 @@
             <button class="navbar-toggler" style="border-color: #fff;" type="button" data-toggle="collapse"
                 data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <i class="fas fa-bars text-light"></i>
+                <i class="fa fa-bars text-light"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav header-nav">
@@ -428,21 +428,21 @@
     </footer>
     <div style="position: fixed;" class="elfsight-app-0e137afc-dfed-4df3-81f7-dbdecb9d3cb6"></div>
     <!-- Footer -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://apps.elfsight.com/p/platform.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
         // Services---->
+
 
         $('.first').on({
             'click': function () {
                 var image = $("#change-image1");
-    image.fadeOut(400, function () {
+    // image.fadeOut(400, function () {
         image.attr("src", "images/1b.jpg").attr('d-image-number','2');
-        image.fadeIn(450);
-    });
+    //     image.fadeIn(450);
+    // });
             }
         });
 
@@ -450,10 +450,10 @@
         $('.second').on({
             'click': function () {
                 var image = $("#change-image2");
-    image.fadeOut(400, function () {
+    // image.fadeOut(400, function () {
         image.attr("src", "images/2b.jpg").attr('d-image-number','2');
-        image.fadeIn(450);
-    });
+    //     image.fadeIn(450);
+    // });
             }
         });
 
@@ -531,7 +531,6 @@
 
         // projects ----->
 
-        jQuery(document).ready(function ($) {
 
             $('.marmar').on({
                 'click': function () {
@@ -556,7 +555,6 @@
                     $('#change-image').attr("src", "images/almayas.jpg");
                 }
             });
-        });
 
         // Button----->
 
@@ -587,6 +585,7 @@
             location.href = 'registration.php?service=' + route;
             }
         }
+
     </script>
 
 </body>
