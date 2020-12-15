@@ -62,7 +62,7 @@
                     <a class="nav-item nav-link text-light" href="#our-services">Services</a>
                     <a class="nav-item nav-link text-light" href="#about-us">About</a>
                     <a class="nav-item nav-link text-light" href="#"
-                        onclick="location.href='regisration.php';">Registration</a>
+                        onclick="location.href='registration.php';">Registration</a>
                     <a class="nav-item nav-link text-light" href="#footer">ContactUs</a>
                 </div>
             </div>
@@ -83,7 +83,7 @@
                             <p style="color: white;">
                                 Register here your information and our team would reach you within two hours.
                             </p>
-                            <button class="reg" onclick="location.href='regisration.php';"></a>
+                            <button class="reg" onclick="location.href='registration.php';"></a>
                                 Registration
                             </button>
                         </div>
@@ -584,7 +584,7 @@
 
         function route(e,route) {
             if(e.srcElement?.attributes['d-image-number']?.value == 2){
-            location.href = 'regisration.html?serive=' + route;
+            location.href = 'registration.php?service=' + route;
             }
         }
     </script>

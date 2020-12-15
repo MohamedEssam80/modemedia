@@ -79,6 +79,7 @@ session_start();
               <input
                 type="text"
                 class="form-control"
+                value="<?= $_GET['service'] ?? '' ?>"
                 placeholder="The Service You Want"
                 id="service"
                 name="service"
@@ -205,11 +206,5 @@ session_start();
   <!-- Footer -->
 
   <body></body>
-  <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    const myParam = urlParams.get("serive");
-    document.getElementById('service').value = myParam;
-    console.log(myParam);
-  </script>
 </html>
 <?php session_destroy() ?>
