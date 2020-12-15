@@ -131,11 +131,11 @@
                 <div class="col-lg-3">
                     <img src="images/serivce1.png" class="img-fluid">
                 </div>
-                <div class="col-lg-4 first feat-img mt-2 mt-lg-0">
+                <div class="col-lg-4 first feat-img mt-2 mt-lg-0" onclick="changePhoto('first')">
                     <img id="change-image1" onclick="route(event,'socail media managment')" src="images/1fb.jpg"
                         class="img-fluid">
                 </div>
-                <div class="col-lg-4 second feat-img mt-2 mt-lg-0">
+                <div class="col-lg-4 second feat-img mt-2 mt-lg-0" onclick="changePhoto('second')">
                     <img id="change-image2" onclick="route(event,'instgram posts')" src="images/2fb.jpg" class="img-fluid">
                 </div>
             </div>
@@ -147,11 +147,11 @@
                 <div class="col-lg-3">
                     <img src="images/service2.png" class="img-fluid">
                 </div>
-                <div class="col-lg-4 third feat-img mt-2 mt-lg-0">
+                <div class="col-lg-4 third feat-img mt-2 mt-lg-0" onclick="changePhoto('third')">
                     <img id="change-image3" onclick="route(event,'web design and mobile app')" src="images/3fb.jpg"
                         class="img-fluid">
                 </div>
-                <div class="col-lg-4 fourth feat-img mt-2 mt-lg-0">
+                <div class="col-lg-4 fourth feat-img mt-2 mt-lg-0"  onclick="changePhoto('fourth')">
                     <img id="change-image4" onclick="route(event,'sponserd ADS')" src="images/4fb.jpg" class="img-fluid">
                 </div>
             </div>
@@ -163,10 +163,10 @@
                 <div class="col-lg-3">
                     <img src="images/service3.png"  class="img-fluid">
                 </div>
-                <div class="col-lg-4 fifth feat-img mt-2 mt-lg-0">
+                <div class="col-lg-4 fifth feat-img mt-2 mt-lg-0"  onclick="changePhoto('fifth')">
                     <img id="change-image5" onclick="route(event,'search engine')" src="images/5fb.jpg" class="img-fluid">
                 </div>
-                <div class="col-lg-4 sixth feat-img mt-2 mt-lg-0">
+                <div class="col-lg-4 sixth feat-img mt-2 mt-lg-0"  onclick="changePhoto('sixth')">
                     <img id="change-image6" onclick="route(event,'video')" src="images/6fb.jpg" class="img-fluid">
                 </div>
             </div>
@@ -178,10 +178,10 @@
                 <div class="col-lg-3">
                     <img src="images/service44.png" class="img-fluid">
                 </div>
-                <div class="col-lg-4 seventh feat-img mt-2 mt-lg-0">
+                <div class="col-lg-4 seventh feat-img mt-2 mt-lg-0" onclick="changePhoto('seventh')">
                     <img id="change-image7" onclick="route(event,'paid ADS')" src="images/7fb.jpg" class="img-fluid">
                 </div>
-                <div class="col-lg-4 eighth feat-img mt-2 mt-lg-0">
+                <div class="col-lg-4 eighth feat-img mt-2 mt-lg-0"  onclick="changePhoto('eighth')">
                     <img id="change-image8" onclick="route(event,'')" src="images/8fb.jpg" class="img-fluid">
                 </div>
             </div>
@@ -434,88 +434,131 @@
     <script src="https://apps.elfsight.com/p/platform.js"></script>
     <script>
         // Services---->
-
-
-        $('.first').on({
-            'click': function () {
-                var image = $("#change-image1");
-    // image.fadeOut(400, function () {
-        image.attr("src", "images/1b.jpg").attr('d-image-number','2');
-    //     image.fadeIn(450);
-    // });
-            }
-        });
-
-
-        $('.second').on({
-            'click': function () {
-                var image = $("#change-image2");
-    // image.fadeOut(400, function () {
-        image.attr("src", "images/2b.jpg").attr('d-image-number','2');
-    //     image.fadeIn(450);
-    // });
-            }
-        });
-
-        $('.third').on({
-            'click': function () {
-                var image = $("#change-image3");
-    // image.fadeOut(400, function () {
+function changePhoto(type){
+    switch(type){
+        case 'first':{
+            var image = $("#change-image1");
+            image.attr("src", "images/1b.jpg").attr('d-image-number','2');
+            break;
+        }
+        case 'second':{
+            var image = $("#change-image2");
+            image.attr("src", "images/2b.jpg").attr('d-image-number','2');
+            break;
+        }
+        case 'third':{
+            var image = $("#change-image3");
         image.attr("src", "images/3b.jpg").attr('d-image-number','2');
-        // image.fadeIn(450);
-    // });
-            }
-        });
+            break;
+        }
+        case 'fourth':{
+            var image = $("#change-image4");
+            image.attr("src", "images/4b.jpg").attr('d-image-number','2');
+            break;
+        }
+        case 'fifth':{
+            var image = $("#change-image5");
+            image.attr("src", "images/5b.jpg").attr('d-image-number','2');
+            break;
+        }
+        case 'sixth':{
+            var image = $("#change-image6");
+            image.attr("src", "images/6b.jpg").attr('d-image-number','2');
+            break;
+        }
+        case 'seventh':{
+            var image = $("#change-image7");
+            image.attr("src", "images/7b.jpg").attr('d-image-number','2');
+            break;
+        }
+        case 'eighth':{
+            var image = $("#change-image8");
+            image.attr("src", "images/8-b.jpg").attr('d-image-number','2');
+            break;
+        }
+    }
+}
 
-        $('.fourth').on({
-            'click': function () {
-                var image = $("#change-image4");
-    // image.fadeOut(400, function () {
-        image.attr("src", "images/4b.jpg").attr('d-image-number','2');
-        // image.fadeIn(450);
-    // });
-            }
-        });
+    //     $('.first').on({
+    //         'click': function () {
+    //             var image = $("#change-image1");
+    // // image.fadeOut(400, function () {
+    //     image.attr("src", "images/1b.jpg").attr('d-image-number','2');
+    // //     image.fadeIn(450);
+    // // });
+    //         }
+    //     });
 
-        $('.fifth').on({
-            'click': function () {
-                var image = $("#change-image5");
-    // image.fadeOut(400, function () {
-        image.attr("src", "images/5b.jpg").attr('d-image-number','2');
-        // image.fadeIn(450);
-    // });
-            }
-        });
 
-        $('.sixth').on({
-            'click': function () {
-                var image = $("#change-image6");
-    // image.fadeOut(400, function () {
-        image.attr("src", "images/6b.jpg").attr('d-image-number','2');
-        // image.fadeIn(450);
-    // });
-            }
-        });
+    //     $('.second').on({
+    //         'click': function () {
+    //             var image = $("#change-image2");
+    // // image.fadeOut(400, function () {
+    //     image.attr("src", "images/2b.jpg").attr('d-image-number','2');
+    // //     image.fadeIn(450);
+    // // });
+    //         }
+    //     });
 
-        $('.seventh').on({
-            'click': function () {
-                var image = $("#change-image7");
-    // image.fadeOut(400, function () {
-        image.attr("src", "images/7b.jpg").attr('d-image-number','2');
-        // image.fadeIn(450);
-    // });
-            }
-        });
+    //     $('.third').on({
+    //         'click': function () {
+    //             var image = $("#change-image3");
+    // // image.fadeOut(400, function () {
+    //     image.attr("src", "images/3b.jpg").attr('d-image-number','2');
+    //     // image.fadeIn(450);
+    // // });
+    //         }
+    //     });
 
-        $('.eighth').on({
-            'click': function () {
-                var image = $("#change-image8");
-    // image.fadeOut(400, function () {
-        image.attr("src", "images/8-b.jpg").attr('d-image-number','2');
-        // image.fadeIn(450);
-    // });d
-            }
-        });
+    //     $('.fourth').on({
+    //         'click': function () {
+    //             var image = $("#change-image4");
+    // // image.fadeOut(400, function () {
+    //     image.attr("src", "images/4b.jpg").attr('d-image-number','2');
+    //     // image.fadeIn(450);
+    // // });
+    //         }
+    //     });
+
+    //     $('.fifth').on({
+    //         'click': function () {
+    //             var image = $("#change-image5");
+    // // image.fadeOut(400, function () {
+    //     image.attr("src", "images/5b.jpg").attr('d-image-number','2');
+    //     // image.fadeIn(450);
+    // // });
+    //         }
+    //     });
+
+    //     $('.sixth').on({
+    //         'click': function () {
+    //             var image = $("#change-image6");
+    // // image.fadeOut(400, function () {
+    //     image.attr("src", "images/6b.jpg").attr('d-image-number','2');
+    //     // image.fadeIn(450);
+    // // });
+    //         }
+    //     });
+
+    //     $('.seventh').on({
+    //         'click': function () {
+    //             var image = $("#change-image7");
+    // // image.fadeOut(400, function () {
+    //     image.attr("src", "images/7b.jpg").attr('d-image-number','2');
+    //     // image.fadeIn(450);
+    // // });
+    //         }
+    //     });
+
+    //     $('.eighth').on({
+    //         'click': function () {
+    //             var image = $("#change-image8");
+    // // image.fadeOut(400, function () {
+    //     image.attr("src", "images/8-b.jpg").attr('d-image-number','2');
+    //     // image.fadeIn(450);
+    // // });d
+    //         }
+    //     });
 
 
 
