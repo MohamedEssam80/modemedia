@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Modemedia</title>
+</head>
+
+
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"
+            style="font-size:17px"></i></button>
+
+    <!-- Header
+   ================================================== -->
+    <header id="home">
+
+        <!-- <div class="container head">
+            <ul class="nav justify-content-center align-items-center navbar-fixed-top">
+                <li class="nav-item">
+                    <a class="nav-link ui" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ui" href="#our-services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ui" href="#about-us">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/medialogo.png" alt="logo" style="width:140px;">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ui" href="#" onclick="location.href='regisration.html';">Registration</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ui" href="#footer">ContactUs</a>
+                </li>
+            </ul>
+        </div> -->
+        <nav class="navbar navbar-expand-lg navbar-light text" style="   background-color: #1115;">
+            <img src="images/medialogo.png" alt="logo" style="width:140px;">
+            <!-- <a class="navbar-brand text-light" href="#">Navbar</a> -->
+            <button class="navbar-toggler" style="border-color: #fff;" type="button" data-toggle="collapse"
+                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa fa-bars text-light"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav header-nav">
+                    <a class="nav-item nav-link text-light active" href="#home">Home <span
+                            class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link text-light" href="#our-services">Services</a>
+                    <a class="nav-item nav-link text-light" href="#about-us">About</a>
+                    <a class="nav-item nav-link text-light" href="#"
+                        onclick="location.href='registration.php';">Registration</a>
+                    <a class="nav-item nav-link text-light" href="#footer">ContactUs</a>
+                </div>
+            </div>
+        </nav>
+        <div class="align-items-center app d-flex fluid" style="position: relative;">
+            <div class="container mode">
+                <img src="images/2.png" class="img-fluid" style="
+                margin: auto;
+                right: 0;
+                bottom: 90%;
+                left: 0;position: absolute;">
+                <div class="fluid script">
+                    <div class="row">
+                        <div class="col-md-5 scirpt-di">
+                            <h3 style="color: white;">
+                                Do You Want Your Own Application?
+                            </h3>
+                            <p style="color: white;">
+                                Register here your information and our team would reach you within two hours.
+                            </p>
+                            <button class="reg" onclick="location.href='registration.php';"></a>
+                                Registration
+                            </button>
+                        </div>
+                        <div class="col-md-7 mobile-img">
+                            <img src="images/mobile.png" class="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="d-flex justify-content-center service-cont">
+            <div class="row justify-content-around">
+                <div class="col-md-3 services">
+                    <img class="img-fluid rounded srv1-img" src="images/Group 109@2x.png">
+                </div>
+                <div class="col-md-3 services">
+                    <img class="img-fluid rounded srv-img" src="images/Group 114@2x.png">
+                </div>
+                <div class="col-md-3 services">
+                    <img class="img-fluid rounded srv-img" src="images/Group 71@2x.png">
+                </div>
+                <div class="col-md-3 services">
+                    <img class="img-fluid rounded srv-img" src="images/Group 70@2x.png">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+
+    <!-- Our Features Services Section
+   ================================================== -->
+
+    <section id="our-services">
+        <br>
+        <h3 class="text-center" style="border-bottom: 3px solid rgb(54, 54, 54);padding: 5px 11px;display: inline;">
+            Our Featured Services
+        </h3>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <img src="images/serivce1.png" class="img-fluid">
+                </div>
+                <div class="col-lg-4 first feat-img mt-2 mt-lg-0" onclick="changePhoto('first')">
+                    <img id="change-image1" onclick="route(event,'socail media managment')" src="images/1fb.jpg"
+                        class="img-fluid">
+                </div>
+                <div class="col-lg-4 second feat-img mt-2 mt-lg-0" onclick="changePhoto('second')">
+                    <img id="change-image2" onclick="route(event,'instgram posts')" src="images/2fb.jpg" class="img-fluid">
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="row">
+                <div class="col-lg-3">
+                    <img src="images/service2.png" class="img-fluid">
+                </div>
+                <div class="col-lg-4 third feat-img mt-2 mt-lg-0" onclick="changePhoto('third')">
+                    <img id="change-image3" onclick="route(event,'web design and mobile app')" src="images/3fb.jpg"
+                        class="img-fluid">
+                </div>
+                <div class="col-lg-4 fourth feat-img mt-2 mt-lg-0"  onclick="changePhoto('fourth')">
+                    <img id="change-image4" onclick="route(event,'sponserd ADS')" src="images/4fb.jpg" class="img-fluid">
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="row">
+                <div class="col-lg-3">
+                    <img src="images/service3.png"  class="img-fluid">
+                </div>
+                <div class="col-lg-4 fifth feat-img mt-2 mt-lg-0"  onclick="changePhoto('fifth')">
+                    <img id="change-image5" onclick="route(event,'search engine')" src="images/5fb.jpg" class="img-fluid">
+                </div>
+                <div class="col-lg-4 sixth feat-img mt-2 mt-lg-0"  onclick="changePhoto('sixth')">
+                    <img id="change-image6" onclick="route(event,'video')" src="images/6fb.jpg" class="img-fluid">
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="row">
+                <div class="col-lg-3">
+                    <img src="images/service44.png" class="img-fluid">
+                </div>
+                <div class="col-lg-4 seventh feat-img mt-2 mt-lg-0" onclick="changePhoto('seventh')">
+                    <img id="change-image7" onclick="route(event,'paid ADS')" src="images/7fb.jpg" class="img-fluid">
+                </div>
+                <div class="col-lg-4 eighth feat-img mt-2 mt-lg-0"  onclick="changePhoto('eighth')">
+                    <img id="change-image8" onclick="route(event,'')" src="images/8fb.jpg" class="img-fluid">
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+    <!-- Our Features Services section End -->
+
+
+    <!-- About us Section
+   ================================================== -->
+
+    <section id="about-us">
+
+        <h3 class="text-center" style="border-bottom: 3px solid rgb(54, 54, 54);padding: 5px 11px; ;display: inline;">
+            About us
+        </h3>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <br>
+                    <br>
+                    <br>
+                    <h5>
+                        MODE Media Services
+                    </h5>
+                    <p>
+                        We are a the perfect place to get your business to the world, with us you will find a talented
+                        team working on your reach to the audience and increase your opportunity in the market , our
+                        professional team will give you the right and high quality of digital
+                        marketing solution helping your media to be on the top always.
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="images/modelogo.png" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5>
+                        Our Values
+                    </h5>
+                    <p>
+                        Help our parents to find the perfect way for them Business and add our creativity between them
+                        hand to reach the world
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <h5>
+                        Our vision
+                    </h5>
+                    <p>
+                        To give the organic digital marketing solution to our partners and make them able to compare
+                        them selfs with the competitors on the field
+                    </p>
+                </div>
+                <div class="col-lg-4"></div>
+            </div>
+        </div>
+    </section>
+    <!-- About us section End -->
+
+    <hr>
+
+    <!-- Why us Section
+   ================================================== -->
+
+    <section id="why-us">
+
+        <h5 style="border-bottom: 3px solid rgb(54, 54, 54);padding: 5px 11px;display: inline;">
+            Why work with us?
+        </h5>
+        <div class="container why">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="images/experience.jpg">
+                    <h5>
+                        Experience
+                    </h5>
+                    <p>
+                        We are experienced in multimedia field and too many different fields , We have a professional
+                        experienced team that can reach the client goal and mind also.
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="images/operator.png">
+                    <h5>
+
+                        Professional Support
+                    </h5>
+                    <p>
+                        Now our clients having 24/7 service support with our professinal support team and you can reach us any time you want.
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="images/operatorr.png">
+                    <h5>
+                        Clients staisfication
+                    </h5>
+                    <p>
+                        Our goal is clients staisfication.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Why us section End -->
+
+    <hr>
+    <!-- Last projects Section
+   ================================================== -->
+
+    <section id="last-projects">
+
+        <h5 style="border-bottom: 3px solid rgb(54, 54, 54);padding: 5px 11px;display: inline;">
+            Last projects
+        </h5>
+        <div id="carouselExampleControls" class="carousel slide mt-3" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/drchef.jpeg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/modecollection.jpeg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/marmar.jpeg" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/almayas.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <i class="fa fa-angle-left" style="font-size:32px;color: black;font-weight: bold;"></i>
+                <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <i class="fa fa-angle-right" style="font-size:32px;color: black;font-weight: bold;"></i>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- <br>
+        <br>
+        <br> -->
+        <!-- ,,,,,,,,,,,, -->
+        <!-- <div class="button-container">
+            <button class="marmar bton">project</button>
+            <button class="modemedia bton">project</button>
+            <button class="modecollection bton">project</button>
+            <button class="almayas bton">project</button>
+        </div>
+        <br>
+        <br>
+        <br> -->
+
+        <!-- <img id="change-image" src="images/modecollection.jpeg" alt="Black Image" class="img-fluid" /> -->
+
+        <!-- <h1 id="change-image">
+            Click here to our featured project
+        </h1> -->
+
+    </section>
+    <!-- Last projects section End -->
+
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4 st" id="footer">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <img src="images/modelogowhite.png" class="img-fluid" style="height: 150px;width: 150px;">
+                    <!-- <p>Here you can use rows and columns to organize your footer content.</p> -->
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Contact Info</h5>
+
+                    <ul class="list-unstyled" style="    letter-spacing: 2px">
+                        <br>
+                        <li>
+                            <p><strong>Phone: </strong> +9(659)1112190</p>
+                        </li>
+                        <li>
+                            <p><strong>Address: </strong> Kuwait, Hawally , Abdullah Abdullatif Al Othman St. , Al Ahli United Bank Complex.</p>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Get help</h5>
+
+                    <ul class="list-unstyled">
+                        <br>
+                        <li>
+                            <p>Terms & Conditions</p>
+                        </li>
+                        <li>
+                            <p>Privacy Policy</p>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://modecollection.store/" target="blank"> modecollection.store</a>
+        </div>
+        <!-- Copyright -->
+        
+    </footer>
+    <div style="position: fixed;" class="elfsight-app-0e137afc-dfed-4df3-81f7-dbdecb9d3cb6"></div>
+    <!-- Footer -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://apps.elfsight.com/p/platform.js"></script>
+    <script>
+        // Services---->
+function changePhoto(type){
+    switch(type){
+        case 'first':{
+            var image = $("#change-image1");
+            image.attr("src", "images/1b.jpg").attr('d-image-number','2');
+            break;
+        }
+        case 'second':{
+            var image = $("#change-image2");
+            image.attr("src", "images/2b.jpg").attr('d-image-number','2');
+            break;
+        }
+        case 'third':{
+            var image = $("#change-image3");
+        image.attr("src", "images/3b.jpg").attr('d-image-number','2');
+            break;
+        }
+        case 'fourth':{
+            var image = $("#change-image4");
+            image.attr("src", "images/4b.jpg").attr('d-image-number','2');
+            break;
+        }
+        case 'fifth':{
+            var image = $("#change-image5");
+            image.attr("src", "images/5b.jpg").attr('d-image-number','2');
+            break;
+        }
+        case 'sixth':{
+            var image = $("#change-image6");
+            image.attr("src", "images/6b.jpg").attr('d-image-number','2');
+            break;
+        }
+        case 'seventh':{
+            var image = $("#change-image7");
+            image.attr("src", "images/7b.jpg").attr('d-image-number','2');
+            break;
+        }
+        case 'eighth':{
+            var image = $("#change-image8");
+            image.attr("src", "images/8-b.jpg").attr('d-image-number','2');
+            break;
+        }
+    }
+}
+
+    //     $('.first').on({
+    //         'click': function () {
+    //             var image = $("#change-image1");
+    // // image.fadeOut(400, function () {
+    //     image.attr("src", "images/1b.jpg").attr('d-image-number','2');
+    // //     image.fadeIn(450);
+    // // });
+    //         }
+    //     });
+
+
+    //     $('.second').on({
+    //         'click': function () {
+    //             var image = $("#change-image2");
+    // // image.fadeOut(400, function () {
+    //     image.attr("src", "images/2b.jpg").attr('d-image-number','2');
+    // //     image.fadeIn(450);
+    // // });
+    //         }
+    //     });
+
+    //     $('.third').on({
+    //         'click': function () {
+    //             var image = $("#change-image3");
+    // // image.fadeOut(400, function () {
+    //     image.attr("src", "images/3b.jpg").attr('d-image-number','2');
+    //     // image.fadeIn(450);
+    // // });
+    //         }
+    //     });
+
+    //     $('.fourth').on({
+    //         'click': function () {
+    //             var image = $("#change-image4");
+    // // image.fadeOut(400, function () {
+    //     image.attr("src", "images/4b.jpg").attr('d-image-number','2');
+    //     // image.fadeIn(450);
+    // // });
+    //         }
+    //     });
+
+    //     $('.fifth').on({
+    //         'click': function () {
+    //             var image = $("#change-image5");
+    // // image.fadeOut(400, function () {
+    //     image.attr("src", "images/5b.jpg").attr('d-image-number','2');
+    //     // image.fadeIn(450);
+    // // });
+    //         }
+    //     });
+
+    //     $('.sixth').on({
+    //         'click': function () {
+    //             var image = $("#change-image6");
+    // // image.fadeOut(400, function () {
+    //     image.attr("src", "images/6b.jpg").attr('d-image-number','2');
+    //     // image.fadeIn(450);
+    // // });
+    //         }
+    //     });
+
+    //     $('.seventh').on({
+    //         'click': function () {
+    //             var image = $("#change-image7");
+    // // image.fadeOut(400, function () {
+    //     image.attr("src", "images/7b.jpg").attr('d-image-number','2');
+    //     // image.fadeIn(450);
+    // // });
+    //         }
+    //     });
+
+    //     $('.eighth').on({
+    //         'click': function () {
+    //             var image = $("#change-image8");
+    // // image.fadeOut(400, function () {
+    //     image.attr("src", "images/8-b.jpg").attr('d-image-number','2');
+    //     // image.fadeIn(450);
+    // // });d
+    //         }
+    //     });
+
+
+
+        // navbar ------>
+
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".navbar-fixed-top");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+
+
+        // projects ----->
+
+
+            $('.marmar').on({
+                'click': function () {
+                    $('#change-image').attr("src", "images/marmar.jpeg");
+                }
+            });
+
+            $('.modemedia').on({
+                'click': function () {
+                    $('#change-image').attr("src", "images/modemedia.jpeg");
+                }
+            });
+
+            $('.modecollection').on({
+                'click': function () {
+                    $('#change-image').attr("src", "images/modecollection.jpeg");
+                }
+            });
+
+            $('.almayas').on({
+                'click': function () {
+                    $('#change-image').attr("src", "images/almayas.jpg");
+                }
+            });
+
+        // Button----->
+
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        function route(e,route) {
+            if(e.srcElement?.attributes['d-image-number']?.value == 2){
+            location.href = 'registration.php?service=' + route;
+            }
+        }
+
+    </script>
+
+</body>
+
+
+</html>
