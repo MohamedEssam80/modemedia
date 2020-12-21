@@ -81,6 +81,7 @@ body{
 .reg:hover {
     background-color: white;
     color: #555;
+    cursor: pointer;
 }
 
 .services {

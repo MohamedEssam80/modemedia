@@ -164,7 +164,7 @@ session_start();
           <ul class="list-unstyled">
             <br />
             <li>
-              <p><strong>Phone: </strong> +9(659)1112190</p>
+              <p><strong>Phone: </strong> +(965)91112190</p>
             </li>
             <li>
               <p><strong>Adress: </strong> Kuwait, Hawally , Abdullah Abdullatif Al Othman St. , Al Ahli United Bank Complex.</p>
